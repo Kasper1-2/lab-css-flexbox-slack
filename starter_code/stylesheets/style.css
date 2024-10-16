@@ -245,8 +245,7 @@ footer links grey: #454245
     footer ul {
       flex-direction: column;
     }
-  }
-  /* Media query for screens between 1024px and 1440px */
+}
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     /* Navbar adjustments */
     .navbar-menu-icon {
@@ -259,4 +258,64 @@ footer links grey: #454245
         width: 100%;
     }
 
-    /* Adjust the section with the heading "Great teamwork starts with
+    }
+
+    /* Media query for screens larger than 1440px */
+@media screen and (min-width: 1440px) {
+    /* Navbar is already displayed on medium screens, so no changes needed */
+
+    /* Header section adjustments */
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 100px; /* Adjust padding for large screens */
+    }
+
+    /* Centering the header image */
+    .header-image {
+        max-width: 50%; /* Make sure the image isn't too large */
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Sign-up buttons next to each other */
+    .sign-up-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; /* Horizontal alignment */
+        gap: 20px; /* Add space between the buttons */
+        margin-top: 20px;
+    }
+
+    .sign-up-button {
+        padding: 15px 25px;
+        font-size: 18px; /* Slightly larger font for bigger screens */
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+    }
+
+    /* Button specific styles */
+    .sign-up-email {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #ccc;
+    }
+
+    .sign-up-google {
+        background-color: #4285F4;
+        color: #fff;
+    }
+
+    /* Header Image */
+    .header-image {
+        width: 100%;
+        max-width: 600px; /* Ensure it's fully visible on large screens */
+        margin: 0 auto;
+        display: block;
+    }
+}
+    
+   
